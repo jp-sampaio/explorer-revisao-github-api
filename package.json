@@ -1,0 +1,23 @@
+{
+  "name": "explorer-revisao-github-api",
+  "version": "1.0.0",
+  "description": "Revisão da aplicação para encontrar os usuários do github por um campo de input e adicionar e remover da tela",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jp-sampaio/explorer-revisao-github-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jp-sampaio/explorer-revisao-github-api/issues"
+  },
+  "homepage": "https://github.com/jp-sampaio/explorer-revisao-github-api#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

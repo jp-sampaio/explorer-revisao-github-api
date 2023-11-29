@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --cl-one: #D4C2AD;
+  --cl-two: #D7A184;
+  --cl-three: #EFDFCC;
+  --cl-four: #BA8E7A;
+  --cl-five: #66796B;
+
+  --ff-general: 'Montserrat', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--cl-one);
+  display: grid;
+  place-content: center;
+  margin-top: -10rem;
+  height: 100vh;
+}
+
+body * {
+  font-family: var(--ff-general);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+header img {
+  width: 4rem;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: var(--cl-five);
+  font-size: clamp(3rem, 2rem + 60%, 5rem);
+}
+
+header .input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .input-wrapper .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+header .input-wrapper input {
+  padding: .8rem;
+  border: none;
+  border-radius: .4rem 0 0 .4rem;
+}
+
+header .input-wrapper .button {
+  padding: .4rem .8rem;
+  border: none;
+  border-radius: 0 .4rem .4rem 0;
+  background-color: var(--cl-four);
+  color: var(--cl-three);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: filter .2s linear;
+}
+
+header .input-wrapper .button:hover {
+  filter: saturate(1.4)
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr:nth-child(odd) {
+  background-color: #d7a184a1;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--cl-two);
+}
+
+thead tr th {
+  background-color: var(--cl-four);
+  color: var(--cl-three);
+  padding: 1.5rem;
+  text-align: left;
+}
+
+thead tr th:first-child {
+  border-top-left-radius: .8rem;
+}
+
+thead tr th:last-child {
+  border-top-right-radius: .8rem;
+}
+
+tbody tr .info-user {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin: 1rem 2rem;
+}
+
+tbody tr .info-user img {
+  width: 8rem;
+  border-radius: 50%;
+}
+
+tbody tr .info-user a {
+  text-decoration: none;
+  color: var(--cl-five);
+}
+
+tbody tr td {
+  text-align: center;
+  color: var(--cl-five);
+}
+
+tbody tr td .remove {
+  border: none;
+  background: transparent;
+  color: var(--cl-three);
+  font-weight: 900;
+  font-size: 2rem;
+  transition: transform .2s ease;
+}
+
+tbody tr td .remove:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
